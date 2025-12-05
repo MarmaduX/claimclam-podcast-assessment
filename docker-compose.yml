@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+    api:
+        build:
+            context: ./api
+        ports:
+            - "8080:8080"
+        environment:
+            MOCK_API_URL: "https://601f1754b5a0e9001706a292.mockapi.io"
+        restart: always
+
+    web:
+        build:
+            context: ./web
+        ports:
+            - "3000:3000"
+        environment:
+            NEXT_PUBLIC_GATEWAY_URL: "http://api:8080"
+        depends_on:
+            - api
+        restart: always
