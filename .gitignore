@@ -1,4 +1,4 @@
-node_modules/
+web/node_modules
 .env
 .env.local
 dist/
@@ -6,9 +6,6 @@ tmp/
 *.log
 
 # Next.js
-.next/
+web/.next/
 out/
-
-# Go
-api/bin/
-api/tmp/
+ 
