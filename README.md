@@ -12,8 +12,8 @@ This README includes both manual steps to quickly set up and run everything.
 
 # Clone the main repository
 
-git clone git@github.com:MarmaduX/claimclam-podcast-assessment.git
-cd claimclam-podcast-assessment
+-   git clone git@github.com:MarmaduX/claimclam-podcast-assessment.git
+-   cd claimclam-podcast-assessment
 
 # Initialize and update the web submodule
 
